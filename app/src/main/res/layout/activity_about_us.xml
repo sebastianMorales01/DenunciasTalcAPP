@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="40dp"
+    android:background="#ffff"
+    tools:context=".AboutUsActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/logo3"
+        android:id="@+id/logo"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/about_us"
+        android:text="About Us"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#1F9CD2"
+        android:textStyle="bold"
+        android:layout_below="@id/logo"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/foto_benja"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/benja"
+        android:layout_margin="16dp"
+        android:layout_below="@id/about_us"
+
+        />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Benjamin Bustos"
+        android:textSize="17sp"
+        android:layout_marginTop="26dp"
+        android:layout_toRightOf="@id/foto_benja"
+        android:layout_below="@id/about_us"
+        />
+    <TextView
+        android:id="@+id/cargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingeniero en Informatica"
+        android:textSize="14sp"
+        android:layout_toRightOf="@id/foto_benja"
+        android:layout_below="@id/name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jefe de Area TI"
+        android:textSize="14sp"
+        android:layout_toRightOf="@id/foto_benja"
+        android:layout_below="@id/cargo"/>
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D74A4A4C"
+        android:layout_below="@id/foto_benja"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/foto_seba"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/seba"
+        android:layout_margin="16dp"
+        android:layout_below="@id/line"
+
+        />
+    <TextView
+        android:id="@+id/seba_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sebastian Morales"
+        android:textSize="17sp"
+        android:layout_marginTop="26dp"
+        android:layout_toRightOf="@id/foto_seba"
+        android:layout_below="@id/line"
+        />
+    <TextView
+        android:id="@+id/seba_cargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingeniero en Informatica"
+        android:textSize="14sp"
+        android:layout_toRightOf="@id/foto_seba"
+        android:layout_below="@id/seba_name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desarrollador"
+        android:textSize="14sp"
+        android:layout_toRightOf="@id/foto_seba"
+        android:layout_below="@id/seba_cargo"/>
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D74A4A4C"
+        android:layout_below="@id/foto_seba"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/foto_mati"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/mati"
+        android:layout_margin="16dp"
+        android:layout_below="@id/line2"
+
+        />
+    <TextView
+        android:id="@+id/mati_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matias Rojas"
+        android:textSize="17sp"
+        android:layout_marginTop="26dp"
+        android:layout_toRightOf="@id/foto_mati"
+        android:layout_below="@id/line2"
+        />
+    <TextView
+        android:id="@+id/mati_cargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingeniero en Informatica"
+        android:textSize="14sp"
+        android:layout_toRightOf="@id/foto_mati"
+        android:layout_below="@id/mati_name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jefe de Proyecto"
+        android:textSize="14sp"
+        android:layout_toRightOf="@id/foto_mati"
+        android:layout_below="@id/mati_cargo"/>
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D74A4A4C"
+        android:layout_below="@id/foto_mati"
+        />
+
+
+</RelativeLayout>

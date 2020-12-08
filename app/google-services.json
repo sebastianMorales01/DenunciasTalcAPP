@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "238304576463",
+    "project_id": "denunciastalcapp",
+    "storage_bucket": "denunciastalcapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238304576463:android:34ff0ca1a1ef4bccdf88ba",
+        "android_client_info": {
+          "package_name": "com.example.denunciastalcapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "238304576463-m0f5p8rtk3esgr8iorqgp3dvofqfusnc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3rJY6JlNVx59p5HCg__8DK_xc4bWeEHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "238304576463-m0f5p8rtk3esgr8iorqgp3dvofqfusnc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

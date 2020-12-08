@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.DenunciarFragment"
+    android:paddingHorizontal="24dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quieres hacer una Denuncia?"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/nuevo_pregunta"/>
+    <EditText
+        android:id="@+id/nuevo_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titulo de la denuncia"
+        android:textSize="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@id/nuevo_pregunta"
+        />
+    <EditText
+        android:id="@+id/nuevo_direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Direccion del suceso"
+        android:layout_below="@id/nuevo_titulo"
+        android:textSize="16dp"
+        />
+    <Button
+        android:id="@+id/nuevo_btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_below="@id/nuevo_direccion"
+        android:background="@drawable/button_rounded"
+        android:textColor="#ffff"
+        android:layout_marginVertical="30dp"
+        />
+
+</RelativeLayout>

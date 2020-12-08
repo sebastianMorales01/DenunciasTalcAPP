@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="30dp"
+    android:paddingTop="150dp"
+    android:paddingBottom="30dp"
+    android:background="#ffff"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/logo3"
+        android:id="@+id/logo"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_nombreapp"
+        android:text="Iniciar Sesión"
+        android:textSize="26dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16sp"
+        android:layout_below="@id/logo"
+        />
+    <ImageView
+        android:id="@+id/login_icon_email"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/login_nombreapp"
+        android:src="@drawable/ic_email"
+        />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_below="@id/login_nombreapp"
+        android:layout_toRightOf="@id/login_icon_email"
+        android:inputType="textEmailAddress"
+        android:textSize="16dp"
+        />
+    <ImageView
+        android:id="@+id/login_icon_pass"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/login_email"
+        android:src="@drawable/ic_password"
+        android:layout_marginVertical="20dp"
+        />
+    <EditText
+        android:id="@+id/login_clave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:layout_below="@id/login_email"
+        android:layout_toRightOf="@id/login_icon_pass"
+        android:layout_marginVertical="20dp"
+        android:textSize="16dp"
+        />
+    <Button
+        android:id="@+id/login_boton"
+        android:layout_width="180in"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_clave"
+        android:text="Iniciar Sesion"
+        android:onClick="signIn"
+        android:background="@drawable/button_rounded"
+        android:textColor="#ffff"
+        android:layout_marginVertical="14dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_boton"
+        android:id="@+id/login_puedes"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        android:layout_centerHorizontal="true"
+        android:text="Puedes Iniciar Sesión con Facebook!"
+        android:textColor="#BCBCB6"
+        android:textSize="16sp" />
+
+    <com.facebook.login.widget.LoginButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_facebook"
+        android:onClick="login_facebook"
+        android:layout_below="@id/login_puedes"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_facebook"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:onClick="launchRegister"
+        android:text="¿No tienes cuenta? Registrate!!"
+        android:textColor="#2196F3" />
+
+</RelativeLayout>
