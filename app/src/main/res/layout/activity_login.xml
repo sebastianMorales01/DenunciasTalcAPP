@@ -111,6 +111,15 @@
         android:gravity="center"
         android:onClick="launchRegister"
         android:text="¿No tienes cuenta? Registrate!!"
-        android:textColor="#2196F3" />
+        android:textColor="#2196F3"
+        android:id="@+id/login_goRegister"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_user"
+        android:layout_below="@id/login_goRegister"
+
+        />
 
 </RelativeLayout>
