@@ -97,21 +97,21 @@
         android:textColor="#BCBCB6"
         android:textSize="14sp" />
 
-    <com.facebook.login.widget.LoginButton
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/signInButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/login_facebook"
-        android:onClick="login_facebook"
-        android:layout_below="@id/login_puedes"
         android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"
-
+        android:layout_centerVertical="true"
+        android:layout_below="@id/login_puedes"
         />
+
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/login_facebook"
+        android:layout_below="@id/signInButton"
         android:layout_margin="10dp"
         android:gravity="center"
         android:onClick="launchRegister"
@@ -119,12 +119,6 @@
         android:textColor="#2196F3"
         android:id="@+id/login_goRegister"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/text_user"
-        android:layout_below="@id/login_goRegister"
 
-        />
 
 </RelativeLayout>
