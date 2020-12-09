@@ -21,19 +21,20 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/register_nombreapp"
+        android:id="@+id/register_register"
         android:text="Registrar Cuenta"
         android:textSize="26dp"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16sp"
         android:layout_below="@id/logo"
+        android:fontFamily="@font/sansitaswashedregular"
         />
     <ImageView
         android:id="@+id/register_icon_email"
         android:layout_width="34dp"
         android:layout_height="34dp"
         android:layout_alignParentStart="true"
-        android:layout_below="@id/register_nombreapp"
+        android:layout_below="@id/register_register"
         android:src="@drawable/ic_email"
         />
     <EditText
@@ -41,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email"
-        android:layout_below="@id/register_nombreapp"
+        android:layout_below="@id/register_register"
         android:layout_toRightOf="@id/register_icon_email"
         android:inputType="textEmailAddress"
         android:textSize="16dp"
@@ -53,7 +54,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@id/register_email"
         android:src="@drawable/ic_user"
-        android:layout_marginVertical="20dp"
+        android:layout_marginTop="20dp"
         />
     <EditText
         android:id="@+id/register_name"
@@ -63,26 +64,26 @@
         android:inputType="text"
         android:layout_below="@id/register_email"
         android:layout_toRightOf="@id/register_icon_user"
-        android:layout_marginVertical="20dp"
+        android:layout_marginTop="20dp"
         android:textSize="16dp"
         />
+
     <ImageView
         android:id="@+id/register_icon_phone"
         android:layout_width="34dp"
         android:layout_height="34dp"
-        android:layout_alignParentStart="true"
         android:layout_below="@id/register_name"
-        android:src="@drawable/ic_phone"
-        android:layout_marginVertical="20dp"
+        android:layout_marginTop="20dp"
         android:padding="2dp"
-        />
+        android:src="@drawable/ic_phone" />
+
     <EditText
         android:id="@+id/register_celular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Celular"
-        android:layout_marginBottom="16dp"
         android:textSize="16dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@id/register_name"
         android:layout_toRightOf="@id/register_icon_phone"
         />
@@ -90,10 +91,9 @@
         android:id="@+id/register_icon_pass"
         android:layout_width="34dp"
         android:layout_height="34dp"
-        android:layout_alignParentStart="true"
         android:layout_below="@id/register_celular"
         android:src="@drawable/ic_password"
-        android:layout_marginVertical="20dp"
+        android:layout_marginTop="20dp"
         />
     <EditText
         android:id="@+id/register_clave"
@@ -103,6 +103,7 @@
         android:inputType="numberPassword"
         android:layout_marginBottom="16dp"
         android:textSize="16dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@id/register_celular"
         android:layout_toRightOf="@id/register_icon_pass"
         />
@@ -116,6 +117,8 @@
         android:textColor="#ffff"
         android:layout_marginVertical="20dp"
         android:layout_below="@id/register_clave"
+        android:fontFamily="@font/bebasneueregular"
+        android:textSize="26dp"
         />
     <TextView
         android:layout_width="match_parent"

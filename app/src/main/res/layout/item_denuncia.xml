@@ -30,7 +30,9 @@
         android:text="Denuncia 1"
         android:textStyle="bold"
         android:layout_toRightOf="@id/item_denuncia_circle"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
