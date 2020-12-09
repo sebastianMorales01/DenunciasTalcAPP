@@ -93,21 +93,18 @@
         android:layout_gravity="center"
         android:layout_marginTop="14dp"
         android:layout_centerHorizontal="true"
-        android:text="Puedes Iniciar Sesión con Facebook!"
+        android:text="Puedes Iniciar Sesión con Google!"
         android:textColor="#BCBCB6"
         android:textSize="14sp" />
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/signInButton"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_below="@id/login_puedes"
         />
-
-
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -117,7 +114,8 @@
         android:onClick="launchRegister"
         android:text="¿No tienes cuenta? Registrate!!"
         android:textColor="#2196F3"
-        android:id="@+id/login_goRegister"/>
+        android:id="@+id/login_goRegister"
+        />
 
 
 

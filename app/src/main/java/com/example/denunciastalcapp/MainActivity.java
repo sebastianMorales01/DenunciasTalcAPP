@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     FirebaseAuth auth;
     TextView title;
 
-    private GoogleApiClient googleApiClient;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     public void signOff(View view) {
         //cerrar sesion
         auth.signOut();
-        //revoke(view);
+
         //redireccionar
         Intent i = new Intent(this, LoginActivity.class);
         startActivity(i);
@@ -63,23 +63,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void goLoginActivity() {
-        Intent intent = new Intent(this,LoginActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
-    }
 
-    public void revoke(View view){
-        Auth.GoogleSignInApi.revokeAccess(googleApiClient).setResultCallback(new ResultCallback<Status>() {
-            @Override
-            public void onResult(@NonNull Status status) {
-                if (status.isSuccess()){
-                    auth.signOut();
-                    goLoginActivity();
-                }else {
-                    Toast.makeText(getApplicationContext(), "No se pudo revocar el acceso", Toast.LENGTH_LONG).show();
-                }
-            }
-        });
-    }
+
+
 }
